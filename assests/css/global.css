@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;700&display=swap');
+
+/* font-family: 'Barlow Condensed', sans-serif; */
+
+/* CORES
+    vermelho        | #e63d3d
+    vemelhor::hover | #c42f2f
+    branco          | #fff
+    preto           | #121212
+    preto::hover    | #23272b
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+
+body{
+    font-family: 'Barlow Condensed', sans-serif;  
+}
+
+button{
+    color: #fff;
+
+    border: none;
+    font-weight: 700;
+    padding: 1.5rem 2.5rem;
+
+    transform: skew(-10deg,0);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button.red{
+    background-color: #e63d3d;
+}
+
+button.red:hover{
+    background-color: #c42f2f;
+}
+
+button.black{
+    background-color: #121212;
+}
+
+button.black:hover{
+    background-color: #23272b;
+}
+
+button.white{
+    background-color: #fff;
+    color: #121212 ;
+}
+
+button.white:hover{
+    background-color: #b9b9b9;
+}
+
+.container{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media (min-width: 641px){
+    .container{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }    
+}
+
+@media (min-width: 992px){
+    .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }    
+}
+
+@media (min-width: 1200px){
+    .container{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }    
+}
